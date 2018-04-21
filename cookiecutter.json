@@ -1,0 +1,12 @@
+{
+    "project_name": "Name of the project",
+    "project_slug": "cookiecutter-aws-sam-{{ cookiecutter.project_name.lower().replace('cookiecutter', '').strip().replace(' ', '-') }}",
+    "project_short_description": "A short description of the project",
+    "version": "0.1.0",
+    "copy_hooks": "no",
+    "_copy_without_render": [
+        "cookiecutter.json",
+        "{{cookiecutter.project_slug}}",
+        "hooks/post_gen_project.py"
+    ]
+}
